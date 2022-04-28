@@ -22,9 +22,9 @@ public class SyntheticDemo {
 
 
     public static void main(String[] args) {
-//        fieldDemo();
-//        methodDemo();
-        constructorDemo();
+        fieldDemo();
+        //methodDemo();
+        //constructorDemo();
     }
 
     //this$0 true
@@ -49,7 +49,8 @@ public class SyntheticDemo {
     //private
     //org.code.ruyin.minutiae.power.synthetic.ConstructorSyntheticDemo$ConstructorDemoInner true
     //4096
-    // modifier => 4096 => synthetic
+    //modifier => 4096 => synthetic
+    //Class类中定义的属性SYNTHETIC值为0x00001000=1*16^3
     public static void constructorDemo(){
         Constructor<?>[] constructors = ConstructorSyntheticDemo.ConstructorDemoInner.class.getDeclaredConstructors();
         for (Constructor<?> constructor : constructors){
